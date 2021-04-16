@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -22,9 +22,6 @@
 
 /* Begin PBXBuildFile section */
 		0825718E26296B0300033A91 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0825718B26296B0300033A91 /* Media.xcassets */; };
-		0825719326296B7900033A91 /* JDTBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0825719226296B7900033A91 /* JDTBundle.bundle */; };
-		0825719426296B7900033A91 /* JDTBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0825719226296B7900033A91 /* JDTBundle.bundle */; };
-		0825719526296B7900033A91 /* JDTBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0825719226296B7900033A91 /* JDTBundle.bundle */; platformFilter = ios; };
 		0830F65825E89DA7001594B9 /* JDTTutorialSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0830F65625E89DA7001594B9 /* JDTTutorialSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0830F66025E89ECB001594B9 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830F65F25E89ECB001594B9 /* TutorialView.swift */; };
 		0835BFC0262583B9005A7CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0835BFBF262583B9005A7CDB /* AppDelegate.swift */; };
@@ -65,7 +62,6 @@
 		0825717C2629696A00033A91 /* JDTBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDTBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		0825717E2629696A00033A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0825718B26296B0300033A91 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		0825719226296B7900033A91 /* JDTBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JDTBundle.bundle; sourceTree = "<group>"; };
 		0830F65325E89DA7001594B9 /* JDTTutorialSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDTTutorialSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0830F65625E89DA7001594B9 /* JDTTutorialSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDTTutorialSDK.h; sourceTree = "<group>"; };
 		0830F65725E89DA7001594B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,7 +135,6 @@
 		0830F65525E89DA7001594B9 /* JDTTutorialSDK */ = {
 			isa = PBXGroup;
 			children = (
-				0825719226296B7900033A91 /* JDTBundle.bundle */,
 				0830F65625E89DA7001594B9 /* JDTTutorialSDK.h */,
 				0830F65725E89DA7001594B9 /* Info.plist */,
 				0830F65F25E89ECB001594B9 /* TutorialView.swift */,
@@ -286,7 +281,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0825719526296B7900033A91 /* JDTBundle.bundle in Resources */,
 				0825718E26296B0300033A91 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +289,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0825719326296B7900033A91 /* JDTBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +296,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0825719426296B7900033A91 /* JDTBundle.bundle in Resources */,
 				0835BFCC262583BC005A7CDB /* LaunchScreen.storyboard in Resources */,
 				0835BFC9262583BC005A7CDB /* Assets.xcassets in Resources */,
 				0835BFC7262583B9005A7CDB /* Main.storyboard in Resources */,

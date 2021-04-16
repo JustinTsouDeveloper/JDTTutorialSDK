@@ -56,38 +56,51 @@ public class TutorialView: UIView {
         
         //************************************************//
         
-        let path = Bundle.main.path(forResource: "JDTTutorialSDKPods/Frameworks/JDTTutorialSDK.framework/JDTBundle", ofType: "bundle")
-        let bundle = Bundle(path: path ?? "")
+//        let path = Bundle.main.path(forResource: "JDTTutorialSDKPods/Frameworks/JDTTutorialSDK.framework/JDTBundle", ofType: "bundle")
+//        let bundle = Bundle(path: path ?? "")
+//        let image = UIImage(named: "icon_player", in: bundle, compatibleWith: nil)
+//
+//        print("path 1:\(String(describing: path))")
+//        print("bundle 1:\(String(describing: bundle))")
+//        print("image 1:\(image ?? UIImage())")
+        
+        //************************************************//
+        
+//        let path1 = Bundle.main.path(forResource: "Pods/JDTTutorialSDKPods/Frameworks/JDTTutorialSDK.framework/JDTBundle", ofType: "bundle")
+//        let bundle1 = Bundle(path: path ?? "")
+//        let image2 = UIImage(named: "icon_player", in: bundle, compatibleWith: nil)
+//        print("Pods path :\(String(describing: path1))")
+//        print("Pods bundle :\(String(describing: bundle1))")
+//        print("Pods image:\(image2 ?? UIImage())")
+        
+        //************************************************//
+        
+        print("Test >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+        
+        let podbundle = Bundle(for: type(of: self))
+        let bundleURL = podbundle.url(forResource: "JDTBundle", withExtension: "bundle") ?? URL(fileURLWithPath: "")
+        let bundle = Bundle(url: bundleURL)
         let image = UIImage(named: "icon_player", in: bundle, compatibleWith: nil)
         
-        print("path 1:\(String(describing: path))")
-        print("bundle 1:\(String(describing: bundle))")
-        print("image 1:\(image ?? UIImage())")
+        print("podbundle:\(podbundle)")
+        print("bundleURL:\(bundleURL)")
+        print("bundle:\(String(describing: bundle))")
+        print("image:\(String(describing: image))")
         
-        //************************************************//
-        
-        let path1 = Bundle.main.path(forResource: "Pods/JDTTutorialSDKPods/Frameworks/JDTTutorialSDK.framework/JDTBundle", ofType: "bundle")
-        let bundle1 = Bundle(path: path ?? "")
-        let image2 = UIImage(named: "icon_player", in: bundle, compatibleWith: nil)
-        print("Pods path :\(String(describing: path1))")
-        print("Pods bundle :\(String(describing: bundle1))")
-        print("Pods image:\(image2 ?? UIImage())")
-        
-        //************************************************//
+        imageView.image = image
         
         
-        print("Image :\(self.bundleImageNamed("icon_player") ?? UIImage())")
+//        print("Image :\(self.bundleImageNamed("icon_player") ?? UIImage())")
         
-        imageView.image = self.bundleImageNamed("icon_player")
+//        imageView.image = self.bundleImageNamed("icon_player")
         
+        let path2 = Bundle(for: type(of: self)).resourcePath! + "/JDTBundle.bundle"
+        let bundle2 = Bundle(path: path2)
+        print("path2 :\(String(describing: path2))")
+        print("bundle2 :\(String(describing: bundle2))")
+        let image1 = UIImage(named: "icon_player", in: bundle2, compatibleWith: nil)
         
-        
-//        let path2 = Bundle(for: type(of: self)).resourcePath! + "/JDTBundle.bundle"
-//        let bundle2 = Bundle(path: path2)
-//        print("Pods path :\(String(describing: path2))")
-//        print("Pods bundle :\(String(describing: bundle2))")
-//
-//        imageView1
+        imageView1.image = image1
         
         stackView.addArrangedSubview(imageView)
         stackView.addArrangedSubview(stringLable)
