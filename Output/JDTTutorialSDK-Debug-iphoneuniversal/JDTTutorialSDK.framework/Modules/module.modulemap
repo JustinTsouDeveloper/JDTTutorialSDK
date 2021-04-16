@@ -1,0 +1,11 @@
+framework module JDTTutorialSDK {
+  umbrella header "JDTTutorialSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module JDTTutorialSDK.Swift {
+    header "JDTTutorialSDK-Swift.h"
+    requires objc
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -21,20 +21,73 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0825718E26296B0300033A91 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0825718B26296B0300033A91 /* Media.xcassets */; };
+		0825719326296B7900033A91 /* JDTBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0825719226296B7900033A91 /* JDTBundle.bundle */; };
+		0825719426296B7900033A91 /* JDTBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0825719226296B7900033A91 /* JDTBundle.bundle */; };
+		0825719526296B7900033A91 /* JDTBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0825719226296B7900033A91 /* JDTBundle.bundle */; platformFilter = ios; };
 		0830F65825E89DA7001594B9 /* JDTTutorialSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0830F65625E89DA7001594B9 /* JDTTutorialSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0830F66025E89ECB001594B9 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830F65F25E89ECB001594B9 /* TutorialView.swift */; };
-		0853C38125E8E21100243219 /* TutorialView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0853C38025E8E21100243219 /* TutorialView.xib */; };
+		0835BFC0262583B9005A7CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0835BFBF262583B9005A7CDB /* AppDelegate.swift */; };
+		0835BFC2262583B9005A7CDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0835BFC1262583B9005A7CDB /* SceneDelegate.swift */; };
+		0835BFC4262583B9005A7CDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0835BFC3262583B9005A7CDB /* ViewController.swift */; };
+		0835BFC7262583B9005A7CDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0835BFC5262583B9005A7CDB /* Main.storyboard */; };
+		0835BFC9262583BC005A7CDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0835BFC8262583BC005A7CDB /* Assets.xcassets */; };
+		0835BFCC262583BC005A7CDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0835BFCA262583BC005A7CDB /* LaunchScreen.storyboard */; };
+		0835BFD526258676005A7CDB /* JDTTutorialSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0830F65325E89DA7001594B9 /* JDTTutorialSDK.framework */; };
+		0835BFD626258676005A7CDB /* JDTTutorialSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0830F65325E89DA7001594B9 /* JDTTutorialSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0835BFD726258676005A7CDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0830F64A25E89DA7001594B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0830F65225E89DA7001594B9;
+			remoteInfo = JDTTutorialSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0835BFD926258676005A7CDB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0835BFD626258676005A7CDB /* JDTTutorialSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0825717C2629696A00033A91 /* JDTBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDTBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0825717E2629696A00033A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0825718B26296B0300033A91 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		0825719226296B7900033A91 /* JDTBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JDTBundle.bundle; sourceTree = "<group>"; };
 		0830F65325E89DA7001594B9 /* JDTTutorialSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDTTutorialSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0830F65625E89DA7001594B9 /* JDTTutorialSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDTTutorialSDK.h; sourceTree = "<group>"; };
 		0830F65725E89DA7001594B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0830F65F25E89ECB001594B9 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
-		0853C38025E8E21100243219 /* TutorialView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialView.xib; sourceTree = "<group>"; };
+		0835BFBD262583B9005A7CDB /* JDTTutorialSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDTTutorialSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0835BFBF262583B9005A7CDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0835BFC1262583B9005A7CDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0835BFC3262583B9005A7CDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0835BFC6262583B9005A7CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0835BFC8262583BC005A7CDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0835BFCB262583BC005A7CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0835BFCD262583BC005A7CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		082571792629696A00033A91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0830F65025E89DA7001594B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,14 +95,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0835BFBA262583B9005A7CDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0835BFD526258676005A7CDB /* JDTTutorialSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0825717D2629696A00033A91 /* JDTBundle */ = {
+			isa = PBXGroup;
+			children = (
+				0825717E2629696A00033A91 /* Info.plist */,
+				0825718B26296B0300033A91 /* Media.xcassets */,
+			);
+			path = JDTBundle;
+			sourceTree = "<group>";
+		};
 		0830F64925E89DA7001594B9 = {
 			isa = PBXGroup;
 			children = (
 				0830F65525E89DA7001594B9 /* JDTTutorialSDK */,
+				0835BFBE262583B9005A7CDB /* JDTTutorialSDKDemo */,
+				0825717D2629696A00033A91 /* JDTBundle */,
 				0830F65425E89DA7001594B9 /* Products */,
+				0835BFD426258676005A7CDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				0830F65325E89DA7001594B9 /* JDTTutorialSDK.framework */,
+				0835BFBD262583B9005A7CDB /* JDTTutorialSDKDemo.app */,
+				0825717C2629696A00033A91 /* JDTBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,12 +139,33 @@
 		0830F65525E89DA7001594B9 /* JDTTutorialSDK */ = {
 			isa = PBXGroup;
 			children = (
+				0825719226296B7900033A91 /* JDTBundle.bundle */,
 				0830F65625E89DA7001594B9 /* JDTTutorialSDK.h */,
 				0830F65725E89DA7001594B9 /* Info.plist */,
 				0830F65F25E89ECB001594B9 /* TutorialView.swift */,
-				0853C38025E8E21100243219 /* TutorialView.xib */,
 			);
 			path = JDTTutorialSDK;
+			sourceTree = "<group>";
+		};
+		0835BFBE262583B9005A7CDB /* JDTTutorialSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0835BFBF262583B9005A7CDB /* AppDelegate.swift */,
+				0835BFC1262583B9005A7CDB /* SceneDelegate.swift */,
+				0835BFC3262583B9005A7CDB /* ViewController.swift */,
+				0835BFC5262583B9005A7CDB /* Main.storyboard */,
+				0835BFC8262583BC005A7CDB /* Assets.xcassets */,
+				0835BFCA262583BC005A7CDB /* LaunchScreen.storyboard */,
+				0835BFCD262583BC005A7CDB /* Info.plist */,
+			);
+			path = JDTTutorialSDKDemo;
+			sourceTree = "<group>";
+		};
+		0835BFD426258676005A7CDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +182,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0825717B2629696A00033A91 /* JDTBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0825717F2629696A00033A91 /* Build configuration list for PBXNativeTarget "JDTBundle" */;
+			buildPhases = (
+				082571782629696A00033A91 /* Sources */,
+				082571792629696A00033A91 /* Frameworks */,
+				0825717A2629696A00033A91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JDTBundle;
+			productName = JDTBundle;
+			productReference = 0825717C2629696A00033A91 /* JDTBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		0830F65225E89DA7001594B9 /* JDTTutorialSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0830F65B25E89DA7001594B9 /* Build configuration list for PBXNativeTarget "JDTTutorialSDK" */;
@@ -104,17 +217,43 @@
 			productReference = 0830F65325E89DA7001594B9 /* JDTTutorialSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		0835BFBC262583B9005A7CDB /* JDTTutorialSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0835BFD0262583BC005A7CDB /* Build configuration list for PBXNativeTarget "JDTTutorialSDKDemo" */;
+			buildPhases = (
+				0835BFB9262583B9005A7CDB /* Sources */,
+				0835BFBA262583B9005A7CDB /* Frameworks */,
+				0835BFBB262583B9005A7CDB /* Resources */,
+				0835BFD926258676005A7CDB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0835BFD826258676005A7CDB /* PBXTargetDependency */,
+			);
+			name = JDTTutorialSDKDemo;
+			productName = JDTTutorialSDKDemo;
+			productReference = 0835BFBD262583B9005A7CDB /* JDTTutorialSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0830F64A25E89DA7001594B9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					0825717B2629696A00033A91 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					0830F65225E89DA7001594B9 = {
 						CreatedOnToolsVersion = 12.4;
 						LastSwiftMigration = 1240;
+					};
+					0835BFBC262583B9005A7CDB = {
+						CreatedOnToolsVersion = 12.4;
 					};
 					083CCC2325E8A4BB0004205B = {
 						CreatedOnToolsVersion = 12.4;
@@ -136,16 +275,38 @@
 			targets = (
 				0830F65225E89DA7001594B9 /* JDTTutorialSDK */,
 				083CCC2325E8A4BB0004205B /* JDTTutorialSDK-Universal */,
+				0835BFBC262583B9005A7CDB /* JDTTutorialSDKDemo */,
+				0825717B2629696A00033A91 /* JDTBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0825717A2629696A00033A91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0825719526296B7900033A91 /* JDTBundle.bundle in Resources */,
+				0825718E26296B0300033A91 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0830F65125E89DA7001594B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0853C38125E8E21100243219 /* TutorialView.xib in Resources */,
+				0825719326296B7900033A91 /* JDTBundle.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0835BFBB262583B9005A7CDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0825719426296B7900033A91 /* JDTBundle.bundle in Resources */,
+				0835BFCC262583BC005A7CDB /* LaunchScreen.storyboard in Resources */,
+				0835BFC9262583BC005A7CDB /* Assets.xcassets in Resources */,
+				0835BFC7262583B9005A7CDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +333,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		082571782629696A00033A91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0830F64F25E89DA7001594B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,9 +348,85 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0835BFB9262583B9005A7CDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0835BFC4262583B9005A7CDB /* ViewController.swift in Sources */,
+				0835BFC0262583B9005A7CDB /* AppDelegate.swift in Sources */,
+				0835BFC2262583B9005A7CDB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0835BFD826258676005A7CDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0830F65225E89DA7001594B9 /* JDTTutorialSDK */;
+			targetProxy = 0835BFD726258676005A7CDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0835BFC5262583B9005A7CDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0835BFC6262583B9005A7CDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0835BFCA262583BC005A7CDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0835BFCB262583BC005A7CDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		082571802629696A00033A91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = UX5VYFQ2PJ;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = JDTBundle/Info.plist;
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aotter.JDTBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		082571812629696A00033A91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = UX5VYFQ2PJ;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = JDTBundle/Info.plist;
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aotter.JDTBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		0830F65925E89DA7001594B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -238,7 +482,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -315,7 +559,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Output/JDTTutorialSDK-Debug-iphoneuniversal",
@@ -350,7 +594,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Output/JDTTutorialSDK-Debug-iphoneuniversal",
@@ -371,6 +615,46 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		0835BFCE262583BC005A7CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UX5VYFQ2PJ;
+				INFOPLIST_FILE = JDTTutorialSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aotter.JDTTutorialSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0835BFCF262583BC005A7CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UX5VYFQ2PJ;
+				INFOPLIST_FILE = JDTTutorialSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aotter.JDTTutorialSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -397,6 +681,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0825717F2629696A00033A91 /* Build configuration list for PBXNativeTarget "JDTBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				082571802629696A00033A91 /* Debug */,
+				082571812629696A00033A91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0830F64D25E89DA7001594B9 /* Build configuration list for PBXProject "JDTTutorialSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -411,6 +704,15 @@
 			buildConfigurations = (
 				0830F65C25E89DA7001594B9 /* Debug */,
 				0830F65D25E89DA7001594B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0835BFD0262583BC005A7CDB /* Build configuration list for PBXNativeTarget "JDTTutorialSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0835BFCE262583BC005A7CDB /* Debug */,
+				0835BFCF262583BC005A7CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
