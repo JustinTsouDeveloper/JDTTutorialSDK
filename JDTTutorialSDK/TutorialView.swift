@@ -87,7 +87,18 @@ public class TutorialView: UIView {
         print("bundle:\(String(describing: bundle))")
         print("image:\(String(describing: image))")
         
-        imageView.image = image
+        //************************************************//
+        
+        let path1 = Bundle.main.path(forResource: "JDTTutorialSDKPods", ofType: "bundle") ?? "" + "/JDTBundle.bundle"
+        let bundle1 = Bundle(path: path1)
+        let image1 = UIImage(named: "icon_player", in: bundle1, compatibleWith: nil)
+
+        print("path 1:\(String(describing: path1))")
+        print("bundle 1:\(String(describing: bundle1))")
+        print("image 1:\(image1 ?? UIImage())")
+        
+        
+        imageView.image = image1
         
         
 //        print("Image :\(self.bundleImageNamed("icon_player") ?? UIImage())")
@@ -98,9 +109,9 @@ public class TutorialView: UIView {
         let bundle2 = Bundle(path: path2)
         print("path2 :\(String(describing: path2))")
         print("bundle2 :\(String(describing: bundle2))")
-        let image1 = UIImage(named: "icon_player", in: bundle2, compatibleWith: nil)
+        let image_nice = UIImage(named: "icon_player", in: bundle2, compatibleWith: nil)
         
-        imageView1.image = image1
+        imageView1.image = image_nice
         
         stackView.addArrangedSubview(imageView)
         stackView.addArrangedSubview(stringLable)
