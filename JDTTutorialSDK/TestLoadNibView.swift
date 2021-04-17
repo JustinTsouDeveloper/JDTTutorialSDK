@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TestLoadNibView: UIView {
+public class TestLoadNibView: UIView {
     
     @IBOutlet var contentView: UIView!
     
