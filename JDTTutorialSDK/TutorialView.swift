@@ -77,15 +77,15 @@ public class TutorialView: UIView {
         
         print("Test >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
         
-        let podbundle = Bundle(for: type(of: self))
-        let bundleURL = podbundle.url(forResource: "JDTBundle", withExtension: "bundle") ?? URL(fileURLWithPath: "")
-        let bundle = Bundle(url: bundleURL)
-        let image = UIImage(named: "icon_player", in: bundle, compatibleWith: nil)
-        
-        print("podbundle:\(podbundle)")
-        print("bundleURL:\(bundleURL)")
-        print("bundle:\(String(describing: bundle))")
-        print("image \n:\(String(describing: image))")
+//        let podbundle = Bundle(for: type(of: self))
+//        let bundleURL = podbundle.url(forResource: "JDTBundle", withExtension: "bundle") ?? URL(fileURLWithPath: "")
+//        let bundle = Bundle(url: bundleURL)
+//        let image = UIImage(named: "icon_player", in: bundle, compatibleWith: nil)
+//
+//        print("podbundle:\(podbundle)")
+//        print("bundleURL:\(bundleURL)")
+//        print("bundle:\(String(describing: bundle))")
+//        print("image \n:\(String(describing: image))")
         
         //************************************************//
         
@@ -105,7 +105,7 @@ public class TutorialView: UIView {
         let path2 = Bundle.main.resourcePath! + "/JDTTutorialSDKPods.bundle/JDTBundle.bundle"
         let bundle2 = Bundle(path:path2)
         let image2 = UIImage(named: "icon_player", in: bundle1, compatibleWith: nil)
-        
+
         print("path 2:\(String(describing: path2))")
         print("bundle 2:\(String(describing: bundle2))")
         print("image 2 \n:\(image2 ?? UIImage())")
@@ -119,10 +119,12 @@ public class TutorialView: UIView {
 //        imageView.image = self.bundleImageNamed("icon_player")
         
         let path_nice = Bundle(for: type(of: self)).resourcePath! + "/JDTBundle.bundle"
-        let bundle_nice = Bundle(path: path2)
+        let bundle_nice = Bundle(path: path_nice)
+        let image_nice = UIImage(named: "icon_player", in: bundle_nice, compatibleWith: nil)
+        
         print("path_nice :\(String(describing: path_nice))")
         print("bundle_nice \n:\(String(describing: bundle_nice))")
-        let image_nice = UIImage(named: "icon_player", in: bundle_nice, compatibleWith: nil)
+        print("image_nice \n:\(image_nice ?? UIImage())")
         
         imageView1.image = image_nice
         
