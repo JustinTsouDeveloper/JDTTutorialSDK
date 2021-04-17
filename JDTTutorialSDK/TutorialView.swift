@@ -128,7 +128,7 @@ public class TutorialView: UIView {
         
         stackView.addArrangedSubview(imageView)
         stackView.addArrangedSubview(stringLable)
-        stackView.addArrangedSubview(imageView1)x
+        stackView.addArrangedSubview(imageView1)
         
         self.addSubview(stackView)
         
