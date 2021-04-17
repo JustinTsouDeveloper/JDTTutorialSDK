@@ -32,6 +32,8 @@
 		0835BFCC262583BC005A7CDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0835BFCA262583BC005A7CDB /* LaunchScreen.storyboard */; };
 		0835BFD526258676005A7CDB /* JDTTutorialSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0830F65325E89DA7001594B9 /* JDTTutorialSDK.framework */; };
 		0835BFD626258676005A7CDB /* JDTTutorialSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0830F65325E89DA7001594B9 /* JDTTutorialSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E95E502262AD31B00F26AF1 /* TestLoadNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95E501262AD31B00F26AF1 /* TestLoadNibView.swift */; };
+		2E95E507262AD39D00F26AF1 /* TestLoadNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E95E506262AD39D00F26AF1 /* TestLoadNibView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		0835BFC8262583BC005A7CDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0835BFCB262583BC005A7CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0835BFCD262583BC005A7CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E95E501262AD31B00F26AF1 /* TestLoadNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLoadNibView.swift; sourceTree = "<group>"; };
+		2E95E506262AD39D00F26AF1 /* TestLoadNibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestLoadNibView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			children = (
 				0825717E2629696A00033A91 /* Info.plist */,
 				0825718B26296B0300033A91 /* Media.xcassets */,
+				2E95E506262AD39D00F26AF1 /* TestLoadNibView.xib */,
 			);
 			path = JDTBundle;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				0830F65625E89DA7001594B9 /* JDTTutorialSDK.h */,
 				0830F65725E89DA7001594B9 /* Info.plist */,
 				0830F65F25E89ECB001594B9 /* TutorialView.swift */,
+				2E95E501262AD31B00F26AF1 /* TestLoadNibView.swift */,
 			);
 			path = JDTTutorialSDK;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E95E507262AD39D00F26AF1 /* TestLoadNibView.xib in Resources */,
 				0825718E26296B0300033A91 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E95E502262AD31B00F26AF1 /* TestLoadNibView.swift in Sources */,
 				0830F66025E89ECB001594B9 /* TutorialView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
