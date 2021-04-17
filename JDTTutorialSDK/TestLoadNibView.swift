@@ -30,7 +30,7 @@ public class TestLoadNibView: UIView {
         let path = Bundle.main.resourcePath! + "/JDTTutorialSDKPods.bundle/JDTBundle.bundle"
         let resource_bundle = Bundle(path:path)
 
-        let nib = UINib(nibName: "TutorialView", bundle: resource_bundle)
+        let nib = UINib(nibName: "TestLoadNibView", bundle: resource_bundle)
 
         contentView = nib.instantiate(withOwner: self, options: nil).first as? UIView
         contentView.frame = bounds
